@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rivera Matute Atelier | Nails & Beauty</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5efe5;
+    color: #29231f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #f8f3ea;
+    border-bottom: 1px solid #c7b28e;
+    padding: 22px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #302821;
+    margin-left: 25px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 25px 70px;
+    background:
+        radial-gradient(circle at top left, #eadfcf 0, transparent 35%),
+        #f5efe5;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 7px;
+    color: #a2875d;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(50px, 10vw, 100px);
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.ornament {
+    color: #a2875d;
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 35px;
+    border: 1px solid #9a7948;
+    color: #352b22;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+    background: transparent;
+}
+
+.section {
+    padding: 75px 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 15px auto 45px;
+    line-height: 1.8;
+    color: #655b52;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.service {
+    background: #faf6ee;
+    border: 1px solid #d2c1a5;
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.service h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.service p {
+    margin-top: 12px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.time {
+    margin-top: 15px;
+    color: #9a7948;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.gallery-box {
+    aspect-ratio: 1 / 1;
+    background: #e9dfd0;
+    border: 1px solid #cdbb9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #8d795e;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.history {
+    background: #29241f;
+    color: #f8f1e5;
+    text-align: center;
+    padding: 80px 25px;
+}
+
+.history h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.history p {
+    max-width: 700px;
+    margin: 25px auto;
+    line-height: 1.9;
+    color: #ded4c5;
+}
+
+.booking {
+    background: #eee3d2;
+    padding: 80px 25px;
+}
+
+.booking-container {
+    max-width: 650px;
+    margin: auto;
+    background: #faf6ee;
+    border: 1px solid #c9b595;
+    padding: 40px;
+}
+
+.booking-container h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-top: 22px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #c9b595;
+    background: #fffdf9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    border: none;
+    background: #3a3027;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.deposit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #876d49;
+}
+
+.contact {
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+}
+
+.contact p {
+    margin-top: 15px;
+}
+
+footer {
+    background: #29241f;
+    color: #ddd1bf;
+    text-align: center;
+    padding: 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+@media(max-width:600px) {
+    header {
+        padding: 20px;
+    }
+
+    .logo-text {
+        font-size: 27px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .booking-container {
+        padding: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-text">RIVERA MATUTE</div>
+
+    <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#booking">BOOK</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="subtitle">
+        VICTORIAN NAIL & BEAUTY ATELIER
+    </div>
+
+    <h1>Rivera Matute</h1>
+
+    <h2>Atelier</h2>
+
+    <div class="ornament">✦ ❧ ✦</div>
+
+    <p>
+        Where timeless elegance meets modern beauty.
+        A refined private nail experience inspired by
+        Victorian artistry, feminine beauty and timeless elegance.
+    </p>
+
+    <a class="button" href="#booking">
+        REQUEST AN APPOINTMENT
+    </a>
+
+</section>
+
+<section class="section" id="about">
+
+    <h2 class="section-title">The Atelier</h2>
+
+    <p class="section-intro">
+        Welcome to Rivera Matute Atelier — a private nail studio
+        where classic beauty meets modern nail artistry.
+        Every appointment is designed with attention to detail,
+        elegance and individuality.
+    </p>
+
+</section>
+
+<section class="section" id="services">
+
+    <h2 class="section-title">Services</h2>
+
+    <p class="section-intro">
+        Select the service that best suits your beauty ritual.
+    </p>
+
+    <div class="services">
+
+        <div class="service">
+            <h3>Nail Art</h3>
+            <p>
+                Detailed nail designs created especially
+                for your personal style.
+            </p>
+            <div class="time">APPOINTMENT REQUIRED</div>
+        </div>
+
+        <div class="service">
+            <h3>Acrylic</h3>
+            <p>
+                Elegant, structured acrylic enhancements
+                with a refined finish.
+            </p>
+            <div class="time">3 HOURS</div>
+        </div>
+
+        <div class="service">
+            <h3>Removal</h3>
+            <p>
+                Professional and gentle removal of existing
+                nail enhancements.
+            </p>
+            <div class="time">45 MINUTES</div>
+        </div>
+
+        <div class="service">
+            <h3>Gel Manicure</h3>
+            <p>
+                A polished and long-lasting manicure
+                with a beautiful gel finish.
+            </p>
+            <div class="time">3 HOURS</div>
+        </div>
+
+        <div class="service">
+            <h3>Russian Manicure</h3>
+            <p>
+                Detailed cuticle work for an exceptionally
+                clean and elegant finish.
+            </p>
+            <div class="time">1 HOUR</div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="history">
+
+    <h2>A Touch of Victorian Beauty</h2>
+
+    <div class="ornament">❧ ✦ ❧</div>
+
+    <p>
+        Inspired by the beauty rituals and romantic artistry
+        of the Victorian era, Rivera Matute Atelier combines
+        historical elegance with contemporary nail artistry.
+    </p>
+
+</section>
+
+<section class="section" id="gallery">
+
+    <h2 class="section-title">The Collection</h2>
+
+    <p class="section-intro">
+        A glimpse into the nail artistry created at
+        Rivera Matute Atelier.
+    </p>
+
+    <div class="gallery">
+
+        <div class="gallery-box">
+            Your Nail Art
+        </div>
+
+        <div class="gallery-box">
+            French Ombre & Glitter
+        </div>
+
+        <div class="gallery-box">
+            Elegant Gel Manicure
+        </div>
+
+        <div class="gallery-box">
+            Victorian Inspired Nail Art
+        </div>
+
+    </div>
+
+</section>
+
+<section class="booking" id="booking">
+
+    <div class="booking-container">
+
+        <h2>Request an Appointment</h2>
+
+        <p class="section-intro">
+            Complete the form below and send your appointment request.
+        </p>
+
+        <form action="mailto:rmelany072@gmail.com"
+              method="post"
+              enctype="text/plain">
+
+            <div class="form-group">
+                <label>NAME</label>
+                <input type="text" name="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label>EMAIL</label>
+                <input type="email" name="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label>PHONE</label>
+                <input type="tel" name="Phone">
+            </div>
+
+            <div class="form-group">
+                <label>SERVICE</label>
+
+                <select name="Service" required>
+                    <option value="">Select a service</option>
+                    <option>Nail Art</option>
+                    <option>Acrylic</option>
+                    <option>Removal</option>
+                    <option>Gel Manicure</option>
+                    <option>Russian Manicure</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label>PREFERRED DATE</label>
+                <input type="date" name="Date" required>
+            </div>
+
+            <div class="form-group">
+                <label>PREFERRED TIME</label>
+                <input type="time" name="Time" required>
+            </div>
+
+            <div class="form-group">
+                <label>MESSAGE</label>
+                <textarea
+                    name="Message"
+                    placeholder="Tell me anything you'd like me to know..."></textarea>
+            </div>
+
+            <button class="submit" type="submit">
+                SEND APPOINTMENT REQUEST
+            </button>
+
+        </form>
+
+        <div class="deposit">
+            A $10 deposit is required to reserve your appointment.
+        </div>
+
+        <div class="deposit">
+            Monday – Saturday
+        </div>
+
+        <div class="deposit">
+            9:30 AM – 12:00 PM
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact">
+
+    <h2>Rivera Matute Atelier</h2>
+
+    <p>
+        For appointment inquiries:
+    </p>
+
+    <p>
+        <strong>rmelany072@gmail.com</strong>
+    </p>
+
+</section>
+
+<footer>
+    RIVERA MATUTE ATELIER · NAILS & BEAUTY
+</footer>
+
+</body>
+</html>
