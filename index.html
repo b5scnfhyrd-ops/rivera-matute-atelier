@@ -154,22 +154,43 @@ nav a {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.gallery-item {
+    text-align: center;
 }
 
 .gallery-box {
+    width: 100%;
     aspect-ratio: 1 / 1;
+    overflow: hidden;
     background: #e9dfd0;
     border: 1px solid #cdbb9d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #8d795e;
+}
+
+.gallery-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    margin-top: 13px;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
-    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #3a3027;
+}
+
+.gallery-item p {
+    margin-top: 5px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #75695d;
+
 }
 
 .history {
@@ -278,11 +299,17 @@ footer {
     letter-spacing: 2px;
 }
 
-@media(max-width:600px) {
+    @media(max-width:600px) {
+
     header {
         padding: 20px;
     }
 
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
     .logo-text {
         font-size: 27px;
     }
@@ -436,56 +463,71 @@ footer {
 
     <div class="gallery">
 
+        <div class="gallery-item">
+
             <div class="gallery-box">
                 <img src="IMG_3334.jpeg"
-                     alt="Elegant pink nail set at Rivera Matute Atelier"
-                     style="width:100%;height:100%;object-fit:cover;">
+                     alt="Elegant pink nail set at Rivera Matute Atelier">
             </div>
-            <div style="text-align:center;margin-top:13px;font-family:'Cormorant Garamond',serif;font-size:25px;color:#3a3027;">
-                Soft Pink Elegance
-            </div>
-            <div style="text-align:center;margin-top:4px;font-size:11px;line-height:1.6;color:#75695d;">
+
+            <h3>Soft Pink Elegance</h3>
+
+            <p>
                 A delicate, polished finish with timeless feminine detail.
-            </div>
+            </p>
+
         </div>
+
+
+        <div class="gallery-item">
 
             <div class="gallery-box">
                 <img src="IMG_3409.jpeg"
-                     alt="Silver glitter nail art at Rivera Matute Atelier"
-                     style="width:100%;height:100%;object-fit:cover;">
+                     alt="Silver glitter nail art at Rivera Matute Atelier">
             </div>
-            <div style="text-align:center;margin-top:13px;font-family:'Cormorant Garamond',serif;font-size:25px;color:#3a3027;">
-                Silver Romance
-            </div>
-            <div style="text-align:center;margin-top:4px;font-size:11px;line-height:1.6;color:#75695d;">
+
+            <h3>Silver Romance</h3>
+
+            <p>
                 Sparkling silver accents paired with a soft, refined base.
-            </div>
-            
+            </p>
+
+        </div>
+
+
+        <div class="gallery-item">
+
             <div class="gallery-box">
                 <img src="IMG_3622.jpeg"
-                     alt="Pink and white floral nail art at Rivera Matute Atelier"
-                     style="width:100%;height:100%;object-fit:cover;">
+                     alt="Pink and white floral nail art at Rivera Matute Atelier">
             </div>
-            <div style="text-align:center;margin-top:13px;font-family:'Cormorant Garamond',serif;font-size:25px;color:#3a3027;">
-                Garden Romance
-            </div>
-            <div style="text-align:center;margin-top:4px;font-size:11px;line-height:1.6;color:#75695d;">
+
+            <h3>Garden Romance</h3>
+
+            <p>
                 Romantic pink and white details inspired by delicate florals.
-            </div>
+            </p>
+
         </div>
+
+
+        <div class="gallery-item">
 
             <div class="gallery-box">
                 <img src="IMG_3669.jpeg"
-                     alt="Soft pink manicure at Rivera Matute Atelier"
-                     style="width:100%;height:100%;object-fit:cover;">
+                     alt="Soft pink manicure at Rivera Matute Atelier">
             </div>
-            <div style="text-align:center;margin-top:13px;font-family:'Cormorant Garamond',serif;font-size:25px;color:#3a3027;">
-                Blush Classic
-            </div>
-            <div style="text-align:center;margin-top:4px;font-size:11px;line-height:1.6;color:#75695d;">
+
+            <h3>Blush Classic</h3>
+
+            <p>
                 A graceful blush manicure with a clean, sophisticated finish.
-            </div>
-</div>
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
 <section class="booking" id="booking">
