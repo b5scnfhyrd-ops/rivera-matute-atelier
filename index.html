@@ -436,41 +436,107 @@ footer {
 
     <div class="gallery">
 
+            <div class="gallery-box">
+                <img src="IMG_3334.jpeg"
+                     alt="Elegant pink nail set at Rivera Matute Atelier"
+                     style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div style="text-align:center;margin-top:13px;font-family:'Cormorant Garamond',serif;font-size:25px;color:#3a3027;">
+                Soft Pink Elegance
+            </div>
+            <div style="text-align:center;margin-top:4px;font-size:11px;line-height:1.6;color:#75695d;">
+                A delicate, polished finish with timeless feminine detail.
+            </div>
+        </div>
 
-  <div class="gallery-box">
-    <img src="IMG_3334.jpeg"
-         alt="Nail artistry at Rivera Matute Atelier"
-         style="width:100%;height:100%;object-fit:cover;">
-  </div>
+            <div class="gallery-box">
+                <img src="IMG_3409.jpeg"
+                     alt="Silver glitter nail art at Rivera Matute Atelier"
+                     style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div style="text-align:center;margin-top:13px;font-family:'Cormorant Garamond',serif;font-size:25px;color:#3a3027;">
+                Silver Romance
+            </div>
+            <div style="text-align:center;margin-top:4px;font-size:11px;line-height:1.6;color:#75695d;">
+                Sparkling silver accents paired with a soft, refined base.
+            </div>
+            
+            <div class="gallery-box">
+                <img src="IMG_3622.jpeg"
+                     alt="Pink and white floral nail art at Rivera Matute Atelier"
+                     style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div style="text-align:center;margin-top:13px;font-family:'Cormorant Garamond',serif;font-size:25px;color:#3a3027;">
+                Garden Romance
+            </div>
+            <div style="text-align:center;margin-top:4px;font-size:11px;line-height:1.6;color:#75695d;">
+                Romantic pink and white details inspired by delicate florals.
+            </div>
+        </div>
 
-  <div class="gallery-box">
-    <img src="IMG_3409.jpeg"
-         alt="Nail artistry at Rivera Matute Atelier"
-         style="width:100%;height:100%;object-fit:cover;">
-  </div>
-
-  <div class="gallery-box">
-    <img src="IMG_3622.jpeg"
-         alt="Nail artistry at Rivera Matute Atelier"
-         style="width:100%;height:100%;object-fit:cover;">
-  </div>
-
-  <div class="gallery-box">
-    <img src="IMG_3669.jpeg"
-         alt="Nail artistry at Rivera Matute Atelier"
-         style="width:100%;height:100%;object-fit:cover;">
-  </div>
-
-
-
-
+            <div class="gallery-box">
+                <img src="IMG_3669.jpeg"
+                     alt="Soft pink manicure at Rivera Matute Atelier"
+                     style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div style="text-align:center;margin-top:13px;font-family:'Cormorant Garamond',serif;font-size:25px;color:#3a3027;">
+                Blush Classic
+            </div>
+            <div style="text-align:center;margin-top:4px;font-size:11px;line-height:1.6;color:#75695d;">
+                A graceful blush manicure with a clean, sophisticated finish.
+            </div>
+</div>
 </section>
 
 <section class="booking" id="booking">
 
     <div class="booking-container">
 
-        <h2>Request an Appointment</h2>
+        <h2>Request an Appointment</h2> <p style="text-align:center;max-width:600px;margin:15px auto 30px;color:#75695d;">
+    I would be delighted to welcome you to Rivera Matute Atelier.
+    Please complete the form below to request your appointment.
+</p>
+
+<form action="https://formsubmit.co/Rmelany072@gmail.com" method="POST"
+      style="max-width:600px;margin:0 auto;">
+
+    <input type="hidden" name="_subject"
+           value="New Appointment Request — Rivera Matute Atelier">
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name"
+           placeholder="Your full name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email"
+           placeholder="Your email address" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone"
+           placeholder="Your phone number">
+
+    <label for="service">Preferred Service</label>
+    <select id="service" name="service" required>
+        <option value="">Please select a service</option>
+        <option value="Classic Manicure">Classic Manicure</option>
+        <option value="Gel Manicure">Gel Manicure</option>
+        <option value="Acrylic Nails">Acrylic Nails</option>
+        <option value="Nail Art">Nail Art</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="preferred-date">
+
+    <label for="message">Additional Details</label>
+    <textarea id="message" name="message" rows="5"
+              placeholder="Tell me about your preferred style or anything I should know."></textarea>
+
+    <button type="submit">Request Appointment</button>
+
+</form>
 
         <p class="section-intro">
             Complete the form below and send your appointment request.
